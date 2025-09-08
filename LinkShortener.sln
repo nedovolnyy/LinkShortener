@@ -3,11 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36414.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkShortener.DataAccess", "scr\LinkShortener.DataAccess\LinkShortener.DataAccess.csproj", "{1668E3BD-0660-47C3-89F7-C78201A7AC9D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkShortener.DataAccess", "src\LinkShortener.DataAccess\LinkShortener.DataAccess.csproj", "{1668E3BD-0660-47C3-89F7-C78201A7AC9D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkShortener.WebUI", "scr\LinkShortener.WebUI\LinkShortener.WebUI.csproj", "{9875E3B1-757A-4E27-BCF7-E291224E0D19}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkShortener.Common", "src\LinkShortener.Common\LinkShortener.Common.csproj", "{9A5D6586-AB4D-4205-AF8C-363C6050C85C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkShortener.Common", "scr\LinkShortener.Common\LinkShortener.Common.csproj", "{9A5D6586-AB4D-4205-AF8C-363C6050C85C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkShortener.BusinessLogic", "src\LinkShortener.BusinessLogic\LinkShortener.BusinessLogic.csproj", "{ADE3EFEE-B9DB-4266-B067-90D7DF3A2DBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkShortener.WebUI", "src\LinkShortener.WebUI\LinkShortener.WebUI.csproj", "{77E0C62C-34E5-4312-A0D5-3C149542F03C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkShortener.BusinessLogic.UnitTests", "test\LinkShortener.UnitTests\LinkShortener.BusinessLogic.UnitTests.csproj", "{0DBDB7BC-ABDE-8EEC-51E2-AA2B0781073E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +23,22 @@ Global
 		{1668E3BD-0660-47C3-89F7-C78201A7AC9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1668E3BD-0660-47C3-89F7-C78201A7AC9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1668E3BD-0660-47C3-89F7-C78201A7AC9D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9875E3B1-757A-4E27-BCF7-E291224E0D19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9875E3B1-757A-4E27-BCF7-E291224E0D19}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9875E3B1-757A-4E27-BCF7-E291224E0D19}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9875E3B1-757A-4E27-BCF7-E291224E0D19}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9A5D6586-AB4D-4205-AF8C-363C6050C85C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9A5D6586-AB4D-4205-AF8C-363C6050C85C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A5D6586-AB4D-4205-AF8C-363C6050C85C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A5D6586-AB4D-4205-AF8C-363C6050C85C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADE3EFEE-B9DB-4266-B067-90D7DF3A2DBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADE3EFEE-B9DB-4266-B067-90D7DF3A2DBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADE3EFEE-B9DB-4266-B067-90D7DF3A2DBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADE3EFEE-B9DB-4266-B067-90D7DF3A2DBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77E0C62C-34E5-4312-A0D5-3C149542F03C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77E0C62C-34E5-4312-A0D5-3C149542F03C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77E0C62C-34E5-4312-A0D5-3C149542F03C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77E0C62C-34E5-4312-A0D5-3C149542F03C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DBDB7BC-ABDE-8EEC-51E2-AA2B0781073E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DBDB7BC-ABDE-8EEC-51E2-AA2B0781073E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DBDB7BC-ABDE-8EEC-51E2-AA2B0781073E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DBDB7BC-ABDE-8EEC-51E2-AA2B0781073E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
