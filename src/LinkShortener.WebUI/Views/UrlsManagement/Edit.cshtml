@@ -1,0 +1,27 @@
+﻿@model ShortUrlModel
+
+@{
+    var shortUrlId = Context.Request.Query["shortUrlId"];
+}
+
+<h3>@ViewData["Title"]</h3>
+<div class="row">
+    <div class="col-md-6">
+        <form id="profile-form" method="post" asp-action="Edit" asp-controller="UrlsManagement">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-floating">
+                <input asp-for="Url" class="form-control" />
+                <label asp-for="Url" class="form-label"></label>
+                <span asp-validation-for="Url" class="text-danger"></span>
+            </div>
+            <div class="table-active invisible">
+                <input name="shortUrlId" value="@shortUrlId" hidden />
+            </div>
+            <button type="submit" class="w-100 btn btn-lg btn-primary">Edit Url!</button>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
